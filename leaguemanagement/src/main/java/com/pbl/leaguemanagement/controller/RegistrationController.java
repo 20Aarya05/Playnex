@@ -20,9 +20,9 @@ public class RegistrationController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("welcome")
+    @GetMapping("index")
     public String showWelcomePage() {
-        return "welcome";
+        return "index";
     }
 
     @GetMapping("register")
