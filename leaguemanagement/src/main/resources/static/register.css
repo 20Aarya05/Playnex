@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 10px;
+  background: url("https://img.freepik.com/premium-photo/stadium-fans-waiting-football-match-red-sunset-sky_489081-609.jpg"), #000;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden; /* Prevents scrollbars on the body */
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("https://img.freepik.com/premium-photo/stadium-fans-waiting-football-match-red-sunset-sky_489081-609.jpg"), #000;
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 400px;
+  max-height: calc(100vh - 40px); /* Adjust max-height to prevent overflow */
+  overflow-y: auto; /* Enable vertical scroll if content exceeds height */
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  animation: appear 2s ease-in-out forwards;
+}
+
+.wrapper::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: hide scrollbar background */
+}
+
+.wrapper {
+  scrollbar-width: none; /* Firefox */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.input-field {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin: 15px 0;
+}
+
+.input-field label {
+  position: absolute;
+  top: 10px; /* Adjusted position */
+  left: 0;
+  color: #fff;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.15s ease;
+}
+
+.input-field input,
+.input-field select {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+}
+
+.input-field input::placeholder {
+  color: #ccc;
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label,
+.input-field select:focus~label,
+.input-field select:valid~label {
+  font-size: 0.8rem;
+  top: 5px; /* Adjusted to prevent overlap */
+  transform: translateY(-120%);
+}
+
+option{
+  background-color: orangered;
+}
+
+select {
+  -webkit-appearance: none; /* Removes default styling in some browsers */
+  -moz-appearance: none; /* Removes default styling in some browsers */
+  appearance: none; /* Removes default styling in all browsers */
+  background-color: transparent; /* Ensures the background is transparent */
+  padding: 10px; /* Adjust padding for better spacing */
+  border: 2px solid #ccc; /* Adds border for better visibility */
+  border-radius: 4px; /* Rounds corners for a cleaner look */
+  color: #fff; /* Sets text color */
+  background: rgba(0, 0, 0, 0.5); /* Adds background color */
+  font-size: 16px;
+}
+
+select::-ms-expand {
+  display: none; /* Removes default arrow in IE */
+}
+
+input[type="password"]::placeholder {
+  color: #ccc;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+button {
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  color: #fff;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.login {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.login a {
+  color: #efefef;
+  text-decoration: none;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start from below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Move to the final position */
+  }
+}

@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url('https://t4.ftcdn.net/jpg/01/26/35/35/240_F_126353528_Lxr7a33xiRVpuYIuEv40GyW8MQ4N2b9E.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    height: 80px;
+    width: 300px;
+    background-image: url('playnexlogo.png');
+    background-position: center;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container {
+    border-radius: 15px;
+    height: 75vh;
+    width: 95vw;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar { 
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    height: 95%;
+    width: 4%;
+    position: absolute;
+    top: 2.5%;
+    left: 1.25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.navbar button {
+    font-size: 1.6rem;
+    margin-top: 0px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+.player_details {
+    border-radius: 15px;
+    height: 60%;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.player_detail_contents {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-family: fantasy;
+    color: black;
+}
+
+.font1 {
+    font-size: 1.5rem;
+}
+
+.description {
+    height: 5%;
+    width: 95%;
+    position: absolute;
+    top: 91.25%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.image-svg-container {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70%;
+    width: 50%;
+    z-index: 2;
+}
+
+.image-svg {
+    width: 100%;
+    height: 100%;
+}
+
+#rating i {
+    color: #ffb800;
+    font-size: 2rem;
+    margin-right: 2px;
+    border: 2px solid #ffb800;
+    border-radius: 20%;
+}
+
+.orange {
+    color: rgb(255, 128, 0);
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+
+#name {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-family: cursive;
+}
+
+.agec {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    font-family: cursive;
+}
+
+.rate {
+    position: absolute;
+    left: 70%;
+    top: 90%;
+    transform: rotate(-2deg);
+    font-size: 2.5rem;
+    font-family: cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    min-width: 10rem;
+}
+
+#rating i {
+    color: #ffb800;
+    font-size: 2rem;
+    margin-right: 2px;
+    border: 2px solid #ffb800;
+    border-radius: 20%;
+}
+
+.abs {
+    height: 80%;
+    width: 40%;
+    background-image: url("cricabs-removebg-preview.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.house_choice {
+    background-color: #535252 !important;
+    color: white;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px; 
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.house_choice:hover {
+    background-color: #8a8787;
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.8);
+    color: white;
+}
+
+.team_c_choice{
+    color: white;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.team_c_choice:hover {
+    background-color: #8a8787;
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.8);
+    color: white;
+}
+
+.tournament_c_choice{
+    color: white;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    border: none;
+    animation: colourshift 2s linear delay iteration-count direction fill-mode;
+}
+
+.tournament_c_choice:hover {
+    background-color: #8a8787;
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.8);
+    color: white;
+}

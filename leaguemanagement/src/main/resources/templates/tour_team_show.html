@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Tournament</title>
+    <link rel="stylesheet" href="tour_a_team_show.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1 class="header">Your tournaments</h1>
+    <div class="container">
+        <div class="navbar">
+            <button class="house_choice" aria-label="Home"><i class="fa-solid fa-house"></i></button>
+            <button class="team_c_choice" aria-label="Teams"><i class="fa-regular fa-address-book"></i></button>
+        </div>
+        <div class="main_content">
+            <div class="sections_container">
+                <div class="tt_box" id="teamBox" style="display: none;">
+                    <div class="tt_list" id="ttList"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="tour_a_team_show.js"></script>
+</body>
+</html>

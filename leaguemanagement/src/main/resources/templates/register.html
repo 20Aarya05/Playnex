@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form action="/register" method="post">
+            <h2>Register</h2>
+            <div class="input-field">
+              <input type="text" name="name" id="name" required>
+              <label>Enter your name</label>
+            </div>
+            <div class="input-field">
+              <input type="name" name="username" id="username" required>
+              <label>Enter username</label>
+            </div>
+            <div class="input-field">
+              <input type="number" name="age" id="age" required>
+              <label>Enter your age</label>
+            </div>
+            <div class="input-field">
+              <input type="number" name="number" id="number" required>
+              <label>Enter contact number</label>
+            </div>
+            <div class="input-field">
+              <input type="email" name="email" id="email" required>
+              <label>Enter your email</label>
+            </div>
+            <div class="input-field">
+              <select name="role" id="userType" required>
+                <option value="" disabled selected></option>
+                <option value="owner">Owner</option>
+                <option value="coach">Coach</option>
+                <option value="player">Player</option>
+              </select>
+              <label>Select type</label>
+            </div>
+            <div class="input-field">
+              <input type="password" name="password" id="password" required>
+              <label>Enter your password</label>
+            </div>
+            <button type="submit" class="reg-button">Register</button>
+            <div class="login">
+              <p>Already have an account? <a href="/login">Log In</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Team</title>
+    <link rel="stylesheet" href="create_Team.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1 class="header">Form up the teams!</h1>
+    <div class="container">
+        <div class="navbar">
+            <button class="house_choice" aria-label="Home"><i class="fa-solid fa-house"></i></button>
+            <button class="team_c_choice" aria-label="Teams"><i class="fa-solid fa-user-plus"></i></i></button>
+            <button class="tournament_c_choice" aria-label="Search Tournament"><i class="fa-solid fa-trophy"></i></i></button>
+        </div>
+        <div class="main_content">
+            <div class="searchtour_cont">
+                <h2>Search Tournament</h2>
+                <input type="number" placeholder="Tournament ID" class="searchtour_input" id="tournamentIdInput">
+                <button type="button" class="searchtour_btn" id="searchBtn">Search</button>
+            </div>
+            <div class="sections_container">
+                <div class="team_box" id="teamBox">
+                    <h2>Teams</h2>
+                    <div class="team_list" id="teamList"></div>
+                </div>
+                <div class="player_box" id="playerBox" style="display: none;">
+                    <div class="team_cont">
+                        <h2 id="selectedTeamName" style="margin-bottom: 5px;">Selected Team: </h2>
+                    </div>
+                    <div class="player_list" id="playerList"></div>
+                    <div class="add_player_cont" id="addPlayerCont"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="create_Team.js"></script>
+</body>
+</html>

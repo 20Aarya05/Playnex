@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League Management Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dashboardc.css">
+</head>
+<body>
+    <div class="logo"></div>
+    <div class="container">
+        <div class="navbar">
+            <button class="house_choice"><i class="fa-solid fa-house"></i></button>
+        </div>
+        <div class="player_details">
+            <div class="player_detail_contents">
+                <p class="orange">Hello Coach!</p>
+                <span id="name"></span><br>
+                <p class="agec">Your Age: <span id="age"></span></p><br>
+                <p class="rate" id="rating"></p>
+            </div>
+        </div>
+    </div>
+    <div class="image-svg-container">
+        <svg class="image-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" preserveAspectRatio="none">
+            <defs>
+                <pattern id="imagePattern" patternUnits="userSpaceOnUse" width="300" height="200">
+                    <image href="cricabsbg.jpeg" x="0" y="0" width="300" height="200" preserveAspectRatio="xMidYMid slice" />
+                </pattern>
+            </defs>
+            <polygon points="300,200 0,200 30,0 300,0" style="fill: none; stroke: grey; stroke-width: 10;" />
+            <polygon points="300,200 0,200 30,0 300,0" style="fill: url(#imagePattern); stroke: black; stroke-width: 5;" />
+        </svg>
+        <div class="abs"></div>
+    </div>
+    <div class="description">Description about web application for league management</div>
+    <script src="dashboardc.js"></script>
+</body>
+</html>
